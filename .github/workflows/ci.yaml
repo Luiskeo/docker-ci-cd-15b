@@ -37,3 +37,12 @@ jobs:
               run: docker build -t luiskeo/backend-spring:latest .
             - name: Publicar imagen Docker en Docker Hub
               run: docker push luiskeo/backend-spring:latest
+    deploy-backend:
+        needs: build-backend
+        runs-on: ubuntu-latest
+        steps:
+            - name: Actualizar contenedor backend
+              run: |
+                  C:\Users\DELL\Desktop\projects\proyecto_docker_compose_limpio
+                  docker compose pull backend
+                  docker compose up -d backend
