@@ -24,7 +24,7 @@ public class testController {
 	}
 
 	@GetMapping(value="/saludar-2")
-	public String hello() {
+	public String hello2() {
 		return "Hola estudiantes de la 15B";
 	}
 	
