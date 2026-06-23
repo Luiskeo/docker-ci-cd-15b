@@ -24,7 +24,7 @@ services:
       SPRING_DATASOURCE_PASSWORD: 1234
   
   frontend:
-    build: ./frontend_test
+    image: luiskeo/frontend_docker:latest
     container_name: frontend-html
     ports:
       - "8081:80"
