@@ -23,6 +23,11 @@ public class testController {
 		return "Hola estudiantes de la 15B";
 	}
 
+	@GetMapping(value="/testcd")
+	public String testcd() {
+		return "Hola testing cd";
+	}
+
 	@GetMapping(value="/saludar-2")
 	public String hello2() {
 		return "Hola estudiantes de la 15B";
