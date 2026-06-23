@@ -28,6 +28,11 @@ public class testController {
 		return "Hola testing cd";
 	}
 
+	@GetMapping(value="/Luis")
+	public String Luis() {
+		return "Hola Luis Cordoba";
+	}
+
 	@GetMapping(value="/saludar-2")
 	public String hello2() {
 		return "Hola estudiantes de la 15B";
