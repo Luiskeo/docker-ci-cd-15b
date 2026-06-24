@@ -74,8 +74,7 @@ jobs:
 
         steps:
             - name: Actualizar contenedor frontend
-              shell: powershell
               run: |
-                  Set-Location "C:\Users\DELL\Desktop\projects\proyecto_docker_compose_limpio"
+                  cd "C:\Users\DELL\Desktop\projects\proyecto_docker_compose_limpio"
                   docker compose pull frontend
                   docker compose up -d frontend
